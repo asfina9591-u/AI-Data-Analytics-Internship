@@ -1,18 +1,35 @@
 # AI Data Analytics Internship
 
-This repository contains my work and assignments completed during my AI/Data Analytics Internship.
+This repository contains my work, assignments, projects, reports, datasets, Python scripts, notebooks, visualizations, and analysis completed during my **AI/Data Analytics Internship**.
 
-The internship focuses on practical data analytics, including data acquisition, data cleaning, exploratory data analysis, data visualization, unsupervised learning, clustering, and interpretation of analytical results.
+The internship focuses on practical applications of:
+
+- Data Acquisition
+- Data Cleaning
+- Data Preprocessing
+- Exploratory Data Analysis
+- Data Visualization
+- Unsupervised Learning
+- Clustering
+- Supervised Learning
+- Classification
+- Feature Engineering
+- Model Evaluation
+- Cross-Validation
+- Data-Driven Business Insights
 
 ---
 
-# Internship Weekly Work
+# Internship Progress
 
-| Week | Topic | Status |
+| Week | Task | Status |
 |---|---|---|
-| Week 1 | Data Acquisition, Cleaning and Preprocessing | Completed |
-| Week 2 | Exploratory Data Analysis and Visualization | Completed |
-| Week 3 | Unsupervised Learning and Clustering Analysis | Completed |
+| Week 1 | Data Acquisition, Cleaning, and Preprocessing | ✅ Completed |
+| Week 2 | Exploratory Data Analysis and Visualization | ✅ Completed |
+| Week 3 | Unsupervised Learning and Clustering Analysis | ✅ Completed |
+| Week 4 | Supervised Learning Model Implementation | ✅ Completed |
+| Week 5 | Pending | ⏳ Pending |
+| Week 6 | Pending | ⏳ Pending |
 
 ---
 
@@ -20,78 +37,90 @@ The internship focuses on practical data analytics, including data acquisition, 
 
 ## Objective
 
-The objective of Week 1 was to acquire a real-world dataset, inspect its structure, identify data quality issues, handle missing values, and prepare the dataset for further analysis.
+The objective of Week 1 was to acquire a publicly available dataset, understand its structure, identify data quality issues, clean the dataset, handle missing values, and prepare the data for further analysis and machine learning tasks.
+
+The **Telco Customer Churn dataset** was selected for this task.
+
+## Key Tasks
+
+The following activities were performed:
+
+- Loaded the dataset using Pandas
+- Examined the dataset structure
+- Checked the number of rows and columns
+- Inspected data types
+- Identified missing values
+- Handled missing values
+- Checked for duplicate records
+- Examined numerical and categorical features
+- Performed basic statistical analysis
+- Cleaned inconsistent data
+- Converted appropriate columns into suitable data types
+- Performed preprocessing
+- Saved the cleaned dataset
+- Saved the preprocessed dataset
 
 ## Dataset
 
-The Telco Customer Churn dataset was used for this task.
+The Telco Customer Churn dataset contains information about customers of a telecommunications company.
 
-The dataset contains information related to:
+Important variables include:
 
-- Customer demographics
-- Tenure
-- Contract details
-- Internet services
-- Payment methods
-- Monthly charges
-- Total charges
-- Customer churn
-
-## Key Steps
-
-### 1. Data Acquisition
-
-The dataset was loaded into Python using the Pandas library.
-
-### 2. Data Exploration
-
-Initial exploration was performed to understand:
-
-- Number of rows and columns
-- Data types
-- Missing values
-- Duplicate records
-- Statistical characteristics of the dataset
-
-### 3. Data Cleaning
-
-The following data cleaning steps were performed:
-
-- Checked for missing values
-- Identified and handled incomplete records
-- Converted numerical columns to appropriate data types
-- Checked for duplicate records
-- Inspected the dataset for data quality issues
-
-### 4. Data Preprocessing
-
-The cleaned dataset was prepared for further analysis and machine learning tasks.
-
-Numerical and categorical variables were examined and prepared appropriately for subsequent analytical operations.
+```text
+Customer information
+Gender
+Senior Citizen
+Partner
+Dependents
+Tenure
+Phone Service
+Internet Service
+Contract
+Payment Method
+Monthly Charges
+Total Charges
+Churn
+```
 
 ## Dataset Statistics
 
-After cleaning and preprocessing:
+The cleaned dataset contained:
 
-- Total records: `7,043`
-- Total features: `28`
-- Average Tenure: approximately `32.37 months`
-- Average Monthly Charges: approximately `64.30`
-- Average Total Charges: approximately `2279.27`
+```text
+Rows: 7043
+Columns: 28
+```
+
+Important numerical statistics included:
+
+```text
+Average Tenure: 32.37 months
+Average Monthly Charges: 64.30
+Average Total Charges: 2279.27
+```
 
 ## Deliverables
 
-The Week 1 deliverables include:
-
-- Jupyter Notebook
-- Cleaned dataset
-- Preprocessed dataset
-- Week 1 report
-
-## Folder
-
 ```text
 Week1_Data_Cleaning_Preprocessing/
+│
+├── Week1_Data_Cleaning_Preprocessing.ipynb
+├── Week1_Data_Cleaning_Preprocessing_Report.docx
+├── customer_churn.csv.ipynb
+├── cleaned_telco_churn.csv
+├── preprocessed_telco_churn.csv
+└── placeholder.txt
+```
+
+## Technologies and Libraries
+
+```text
+Python
+Pandas
+NumPy
+Jupyter Notebook
+Data Cleaning
+Data Preprocessing
 ```
 
 ---
@@ -100,93 +129,117 @@ Week1_Data_Cleaning_Preprocessing/
 
 ## Objective
 
-The objective of Week 2 was to perform Exploratory Data Analysis (EDA) on the cleaned Telco Customer Churn dataset and identify important patterns, trends, and relationships within the data.
+The objective of Week 2 was to perform **Exploratory Data Analysis (EDA)** on the cleaned Telco Customer Churn dataset.
 
-## Dataset
+The purpose was to identify patterns, relationships, trends, and potential factors associated with customer churn.
 
-The cleaned Telco Customer Churn dataset from Week 1 was used for the analysis.
-
-## Key Analysis
+## Key Tasks
 
 The following analyses were performed:
 
-### 1. Customer Churn Distribution
+- Dataset exploration
+- Missing-value verification
+- Statistical analysis
+- Churn distribution analysis
+- Contract versus churn analysis
+- Tenure versus churn analysis
+- Monthly charges versus churn analysis
+- Internet service versus churn analysis
+- Payment method versus churn analysis
+- Correlation analysis
+- Data visualization
+- Business insight generation
 
-The distribution of customers who churned and customers who remained with the company was analyzed.
+## Analysis Performed
 
-This helped understand the overall proportion of churned and retained customers.
+### Churn Distribution
 
-### 2. Contract Type vs Churn
+The distribution of customers who churned and customers who remained was analyzed.
 
-Customer churn was analyzed across different contract types.
+This helped understand the overall proportion of churned customers.
 
-This analysis helped identify whether customers with different contract durations showed different churn behavior.
+### Contract vs Churn
 
-### 3. Tenure vs Churn
+Customer churn was compared across different contract types.
 
-The relationship between customer tenure and churn was analyzed.
+This analysis helped identify whether customers with different contract durations exhibited different churn behavior.
 
-This helped understand whether customers who had stayed with the company for longer periods behaved differently from newer customers.
+### Tenure vs Churn
 
-### 4. Monthly Charges vs Churn
+Customer tenure was analyzed to understand whether the length of the customer relationship affected churn.
 
-Average monthly charges were compared between customers who churned and customers who remained.
+### Monthly Charges vs Churn
 
-This analysis helped identify whether higher monthly charges were associated with increased churn.
+Monthly charges were compared between customers who churned and customers who did not.
 
-### 5. Internet Service vs Churn
+The analysis produced the following average values:
 
-Churn behavior was compared across different internet service types.
+```text
+Average Monthly Charges
 
-### 6. Payment Method vs Churn
+Churn = No  → 61.27
+Churn = Yes → 74.44
+```
 
-Different payment methods were analyzed to identify possible relationships between payment behavior and customer churn.
+This indicated that customers with higher monthly charges showed higher average churn in the analyzed dataset.
 
-### 7. Correlation Analysis
+### Internet Service vs Churn
 
-A correlation heatmap was created to identify relationships between numerical variables in the dataset.
+Different internet service categories were compared with customer churn.
+
+### Payment Method vs Churn
+
+Different payment methods were analyzed to identify potential relationships with customer churn.
+
+### Correlation Analysis
+
+A correlation analysis was performed on numerical variables and visualized using a correlation heatmap.
 
 ## Visualizations
 
 The Week 2 analysis included visualizations such as:
 
-- Churn distribution
-- Contract type vs churn
-- Tenure vs churn
-- Monthly charges vs churn
-- Internet service vs churn
-- Payment method vs churn
-- Correlation heatmap
-
-## Key Insights
-
-The exploratory analysis showed that customer churn can be associated with several customer characteristics and service-related factors.
-
-Important factors investigated included:
-
-- Contract type
-- Customer tenure
-- Monthly charges
-- Internet service
-- Payment method
-
-Customers with shorter tenure and certain contract or service combinations showed higher churn tendencies.
-
-The analysis demonstrates how Exploratory Data Analysis can be used to identify patterns that may support customer retention and business decision-making.
+```text
+Churn Distribution
+Contract vs Churn
+Tenure vs Churn
+Monthly Charges vs Churn
+Internet Service vs Churn
+Payment Method vs Churn
+Correlation Heatmap
+```
 
 ## Deliverables
 
-The Week 2 deliverables include:
-
-- Python EDA script
-- Visualizations
-- Processed dataset
-- Week 2 report
-
-## Folder
-
 ```text
 Week2_EDA_and_Visualization/
+│
+├── Week2_EDA.py
+├── Week 2 Task – Exploratory Data Analysis and Visualization.docx
+├── cleaned_telco_churn.csv
+├── preprocessed_telco_churn.csv
+│
+├── churn_distribution.png
+├── contract_vs_churn.png
+├── tenure_vs_churn.png
+├── average_monthly_charges_by_churn.png
+├── internet_service_vs_churn.png
+├── payment_method_vs_churn.png
+├── correlation_heatmap.png
+└── placeholder.txt
+```
+
+## Technologies and Libraries
+
+```text
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Exploratory Data Analysis
+Data Visualization
+Correlation Analysis
 ```
 
 ---
@@ -195,501 +248,672 @@ Week2_EDA_and_Visualization/
 
 ## Objective
 
-The objective of Week 3 was to apply unsupervised machine learning techniques to segment customers into meaningful groups based on their demographic and behavioral characteristics.
+The objective of Week 3 was to apply **unsupervised learning techniques** to segment customers into meaningful groups.
 
-K-Means clustering was used to identify customer segments and analyze the characteristics of each segment.
+A publicly available **Mall Customers dataset** was selected for the clustering task.
+
+The primary technique used was **K-Means Clustering**.
 
 ## Dataset
 
-The Mall Customers dataset was selected for the clustering analysis.
-
-The dataset contains the following attributes:
-
-- Customer ID
-- Gender
-- Age
-- Annual Income
-- Spending Score
-
-## Features Used for Clustering
-
-The following numerical features were selected:
-
-- `Age`
-- `Annual Income (k$)`
-- `Spending Score (1-100)`
-
-The `CustomerID` column was excluded because it is only an identifier and does not provide meaningful information for clustering.
-
-The `Genre` column was also not included in the K-Means feature set because the main clustering analysis focused on numerical demographic and behavioral characteristics.
-
-## Data Preprocessing
-
-The selected numerical features were standardized before applying the clustering algorithm.
-
-`StandardScaler` from Scikit-learn was used to standardize the features.
-
-This was important because the selected features have different numerical ranges.
-
-Standardization ensures that one feature does not dominate the clustering process simply because it has a larger numerical scale.
-
-## Clustering Algorithm
-
-### K-Means Clustering
-
-K-Means was selected as the primary clustering algorithm.
-
-K-Means is an unsupervised machine learning algorithm that groups similar observations into clusters.
-
-The algorithm works by:
-
-1. Selecting a specified number of clusters.
-2. Initializing cluster centroids.
-3. Assigning each data point to the nearest centroid.
-4. Updating the centroids.
-5. Repeating the process until the clusters stabilize.
-
-## Selecting the Number of Clusters
-
-Two methods were used to determine a suitable number of clusters:
-
-### Elbow Method
-
-The Elbow Method was used to calculate the inertia for different values of `K`.
-
-The analysis tested:
+The dataset contains information about mall customers including:
 
 ```text
-K = 2 to 8
+CustomerID
+Genre
+Age
+Annual Income (k$)
+Spending Score (1-100)
 ```
 
-Inertia represents the within-cluster sum of squared distances between data points and their assigned cluster centroids.
+## Selected Features
 
-The elbow curve was visualized to help identify an appropriate number of clusters.
-
-### Silhouette Score
-
-Silhouette scores were calculated for the tested values of `K`.
-
-The silhouette score measures how well each data point fits within its assigned cluster compared with other clusters.
-
-A higher silhouette score generally indicates better-defined and better-separated clusters.
-
-## Final Number of Clusters
-
-Based on the combined evaluation using the Elbow Method and Silhouette Analysis, the final K-Means model used:
+For clustering, the following numerical features were selected:
 
 ```text
-Number of Clusters = 6
+Age
+Annual Income (k$)
+Spending Score (1-100)
 ```
 
-The final silhouette score was approximately:
+The final feature matrix contained:
 
 ```text
-0.4284
+Shape: (200, 3)
 ```
 
-This indicates a moderate level of cluster separation and provides a useful segmentation of the customer population.
+## Key Tasks
+
+The following steps were performed:
 
----
+- Loaded the Mall Customers dataset
+- Inspected the dataset
+- Checked data types
+- Selected relevant clustering features
+- Prepared numerical features
+- Standardized the features
+- Applied K-Means clustering
+- Tested different values of K
+- Used the Elbow Method
+- Used Silhouette Analysis
+- Selected the appropriate number of clusters
+- Assigned customers to clusters
+- Created cluster visualizations
+- Analyzed cluster characteristics
+- Generated business interpretations
 
-# Final Cluster Profiles
-
-The final clustering analysis produced six customer segments.
-
-| Cluster | Customers | Average Age | Average Income (k$) | Average Spending |
-|---:|---:|---:|---:|---:|
-| 0 | 45 | 56.33 | 54.27 | 49.07 |
-| 1 | 39 | 26.79 | 57.10 | 48.13 |
-| 2 | 33 | 41.94 | 88.94 | 16.97 |
-| 3 | 39 | 32.69 | 86.54 | 82.13 |
-| 4 | 23 | 25.00 | 25.26 | 77.61 |
-| 5 | 21 | 45.52 | 26.29 | 19.38 |
-
----
-
-# Cluster Interpretation
-
-## Cluster 0 – Older Moderate Customers
-
-Cluster 0 contains `45` customers.
-
-Average characteristics:
-
-- Average age: `56.33`
-- Average income: `54.27 k$`
-- Average spending score: `49.07`
-
-These customers represent a relatively older customer segment with moderate income and average spending behavior.
-
-This group may respond to stable, personalized offers and loyalty-based marketing strategies.
-
----
-
-## Cluster 1 – Young Moderate Customers
-
-Cluster 1 contains `39` customers.
-
-Average characteristics:
-
-- Average age: `26.79`
-- Average income: `57.10 k$`
-- Average spending score: `48.13`
-
-These customers are relatively young and have moderate income and spending behavior.
-
-Marketing strategies for this group could focus on engagement, personalized recommendations, and products relevant to younger customers.
-
----
-
-## Cluster 2 – High-Income Low-Spending Customers
-
-Cluster 2 contains `33` customers.
-
-Average characteristics:
-
-- Average age: `41.94`
-- Average income: `88.94 k$`
-- Average spending score: `16.97`
-
-This segment has relatively high income but a low spending score.
-
-This group represents a potential business opportunity because customers have purchasing capacity but are currently not spending heavily.
-
-Personalized offers, targeted promotions, loyalty benefits, and improved customer engagement could potentially increase their spending.
-
----
-
-## Cluster 3 – High-Income High-Spending Customers
-
-Cluster 3 contains `39` customers.
-
-Average characteristics:
-
-- Average age: `32.69`
-- Average income: `86.54 k$`
-- Average spending score: `82.13`
-
-This segment has both high income and high spending behavior.
-
-These customers can be considered a valuable customer segment.
-
-Potential strategies include:
-
-- Premium loyalty programs
-- Exclusive offers
-- Personalized recommendations
-- Early access to new products
-- VIP customer benefits
-
----
-
-## Cluster 4 – Young High-Spending Customers
-
-Cluster 4 contains `23` customers.
-
-Average characteristics:
-
-- Average age: `25.00`
-- Average income: `25.26 k$`
-- Average spending score: `77.61`
-
-These customers have relatively low income but a high spending score.
-
-This segment may respond well to:
-
-- Discounts
-- Affordable products
-- Promotional campaigns
-- Trend-oriented marketing
-- Limited-time offers
-
----
-
-## Cluster 5 – Low-Income Low-Spending Customers
-
-Cluster 5 contains `21` customers.
-
-Average characteristics:
-
-- Average age: `45.52`
-- Average income: `26.29 k$`
-- Average spending score: `19.38`
-
-This segment has relatively low income and low spending activity.
-
-Businesses could use value-oriented products, discounts, and targeted promotional campaigns to improve engagement with this group.
-
----
-
-# Business Implications
-
-The clustering analysis can support customer segmentation and targeted marketing strategies.
-
-Different customer groups can be approached using different strategies instead of applying the same marketing strategy to every customer.
-
-### High-Income High-Spending Customers
-
-Customers in Cluster 3 could receive:
-
-- Premium loyalty programs
-- VIP benefits
-- Exclusive products
-- Personalized recommendations
-- Early access offers
-
-### High-Income Low-Spending Customers
-
-Customers in Cluster 2 could receive:
-
-- Personalized promotions
-- Product recommendations
-- Special discounts
-- Loyalty incentives
-- Targeted engagement campaigns
-
-The goal would be to convert their high purchasing capacity into higher spending.
-
-### Young High-Spending Customers
-
-Customers in Cluster 4 could be targeted using:
-
-- Discounts
-- Social media campaigns
-- Trend-based products
-- Affordable premium products
-- Limited-time offers
-
-### Low-Income Low-Spending Customers
-
-Customers in Cluster 5 could receive:
-
-- Value-based offers
-- Affordable product recommendations
-- Discounts
-- Budget-friendly packages
-
-### Older Moderate Customers
-
-Cluster 0 could be approached using:
-
-- Loyalty programs
-- Personalized offers
-- Customer retention campaigns
-- Products suited to their preferences
-
-### Young Moderate Customers
-
-Cluster 1 could be targeted using:
-
-- Personalized recommendations
-- Engagement campaigns
-- Membership programs
-- Youth-oriented products and promotions
-
----
-
-# Visualizations
-
-The Week 3 project contains multiple visualizations to understand the customer clusters.
-
-The main visualizations include:
-
-- Age distribution
-- Income distribution
-- Spending score distribution
-- Elbow curve
-- Silhouette score analysis
-- Cluster distribution
-- Age vs Spending Score cluster visualization
-- Income vs Spending Score cluster visualization
-- 3D cluster visualization
-- Gender cluster distribution
-- Cluster business comparison
-
-These visualizations help communicate the differences between customer segments.
-
----
-
-# Week 3 Deliverables
-
-The Week 3 project contains:
-
-- Jupyter Notebook
-- Mall Customers dataset
-- Clustered customer dataset
-- Cluster summary
-- Cluster profile
-- Elbow curve
-- Silhouette score visualization
-- Cluster visualizations
-- Business comparison visualization
-- Week 3 report
-
-## Folder
+## Clustering Method
+
+The **K-Means Clustering algorithm** was selected because it is a commonly used unsupervised learning algorithm for customer segmentation.
+
+The algorithm groups customers based on similarities in their:
+
+```text
+Age
+Annual Income
+Spending Score
+```
+
+## Cluster Analysis
+
+The final clustering analysis produced **6 customer clusters**.
+
+The cluster summary was:
+
+```text
+Cluster 0
+Customers: 45
+Average Age: 56.33
+Average Income: 54.27
+Average Spending: 49.07
+
+Cluster 1
+Customers: 39
+Average Age: 26.79
+Average Income: 57.10
+Average Spending: 48.13
+
+Cluster 2
+Customers: 33
+Average Age: 41.94
+Average Income: 88.94
+Average Spending: 16.97
+
+Cluster 3
+Customers: 39
+Average Age: 32.69
+Average Income: 86.54
+Average Spending: 82.13
+
+Cluster 4
+Customers: 23
+Average Age: 25.00
+Average Income: 25.26
+Average Spending: 77.61
+
+Cluster 5
+Customers: 21
+Average Age: 45.52
+Average Income: 26.29
+Average Spending: 19.38
+```
+
+## Business Interpretation
+
+The clusters represent different customer segments.
+
+For example:
+
+### Cluster 3 – High Income, High Spending
+
+```text
+Average Income: 86.54 k$
+Average Spending Score: 82.13
+```
+
+This segment represents customers with high purchasing potential and high spending behavior.
+
+### Cluster 2 – High Income, Low Spending
+
+```text
+Average Income: 88.94 k$
+Average Spending Score: 16.97
+```
+
+These customers have high income but relatively low spending scores, making them a potential target for personalized promotions.
+
+### Cluster 4 – Low Income, High Spending
+
+```text
+Average Income: 25.26 k$
+Average Spending Score: 77.61
+```
+
+These customers have lower income but relatively high spending scores.
+
+## Visualizations
+
+The clustering analysis included visualizations such as:
+
+```text
+Age Distribution
+Income Distribution
+Spending Score Distribution
+Age vs Spending Score
+Income vs Spending Score
+Cluster Distribution
+Cluster Comparison
+3D Cluster Visualization
+Elbow Curve
+Silhouette Score Analysis
+```
+
+## Deliverables
 
 ```text
 Week-3-Unsupervised-Learning-Clustering/
+│
+├── data/
+│   └── Mall_Customers.csv
+│
+├── notebooks/
+│   └── Week3_Clustering_Analysis.ipynb
+│
+├── outputs/
+│   ├── age_distribution.png
+│   ├── income_distribution.png
+│   ├── spending_score_distribution.png
+│   ├── age_vs_spending_clusters.png
+│   ├── income_vs_spending_clusters.png
+│   ├── cluster_distribution.png
+│   ├── cluster_business_comparison.png
+│   ├── clusters_3d.png
+│   ├── elbow_curve.png
+│   ├── silhouette_scores.png
+│   ├── customer_clusters.csv
+│   ├── cluster_summary.csv
+│   └── final_cluster_profile.csv
+│
+└── Week3_Clustering_Report.docx
+```
+
+## Technologies and Libraries
+
+```text
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+K-Means Clustering
+Feature Scaling
+Elbow Method
+Silhouette Analysis
+```
+
+---
+
+# Week 4 – Supervised Learning Model Implementation
+
+## Objective
+
+The objective of Week 4 was to design and implement a **supervised machine learning model** using Python and Scikit-learn.
+
+A **classification problem** was selected using the Telco Customer Churn dataset.
+
+The goal was to predict whether a customer is likely to churn.
+
+## Problem Definition
+
+The machine learning problem was defined as a binary classification problem.
+
+The target variable was:
+
+```text
+Churn Label
+```
+
+The target classes were:
+
+```text
+0 → No Churn
+1 → Churn
+```
+
+The model learns patterns from customer information and predicts whether a customer is likely to churn.
+
+## Dataset
+
+The Telco Customer Churn dataset was used for the supervised learning task.
+
+The dataset contains customer-related features such as:
+
+```text
+Gender
+Age
+Senior Citizen
+Partner
+Dependents
+Tenure Months
+Phone Service
+Internet Service
+Contract
+Payment Method
+Monthly Charges
+Total Charges
+CLTV
+```
+
+## Data Preparation
+
+The following preprocessing steps were performed:
+
+- Loaded the cleaned dataset
+- Identified the target variable
+- Removed unnecessary identifier columns
+- Converted the target into binary values
+- Identified numerical features
+- Identified categorical features
+- Handled missing values
+- Applied numerical preprocessing
+- Applied categorical preprocessing
+- Encoded categorical variables
+- Scaled numerical features
+- Prepared the final machine learning pipeline
+
+## Feature Engineering and Preprocessing
+
+Numerical features were processed using:
+
+```text
+Median Imputation
+Standard Scaling
+```
+
+Categorical features were processed using:
+
+```text
+Most Frequent Imputation
+One-Hot Encoding
+```
+
+The preprocessing was implemented using Scikit-learn's:
+
+```text
+ColumnTransformer
+Pipeline
+SimpleImputer
+StandardScaler
+OneHotEncoder
+```
+
+## Train-Test Split
+
+The dataset was divided into training and testing sets.
+
+The model was trained using the training dataset and evaluated using the unseen testing dataset.
+
+The split used:
+
+```text
+Training Data: 80%
+Testing Data: 20%
+```
+
+Stratified splitting was used to preserve the class distribution.
+
+## Machine Learning Model
+
+A **Random Forest Classifier** was selected as the supervised learning algorithm.
+
+Random Forest was selected because it:
+
+- Handles nonlinear relationships
+- Works with multiple feature types
+- Can capture complex patterns
+- Provides feature importance
+- Is relatively robust to noise
+- Performs well for classification tasks
+
+The model was configured using:
+
+```text
+Number of Estimators: 200
+Random State: 42
+Class Weight: Balanced
+```
+
+## Model Training
+
+The Random Forest model was trained using the prepared training data.
+
+The complete workflow was implemented using a Scikit-learn Pipeline combining:
+
+```text
+Data Preprocessing
+        ↓
+Feature Transformation
+        ↓
+Random Forest Classifier
+        ↓
+Prediction
+        ↓
+Evaluation
+```
+
+## Model Evaluation
+
+The model was evaluated using the following metrics:
+
+```text
+Accuracy
+Precision
+Recall
+F1 Score
+```
+
+A confusion matrix was also generated to analyze correct and incorrect predictions.
+
+## Cross-Validation
+
+To evaluate the stability of the model, **5-fold Stratified Cross-Validation** was performed.
+
+The cross-validation process evaluated the model across multiple subsets of the dataset.
+
+The following results were saved:
+
+```text
+Fold 1 Accuracy
+Fold 2 Accuracy
+Fold 3 Accuracy
+Fold 4 Accuracy
+Fold 5 Accuracy
+Mean Cross-Validation Accuracy
+```
+
+## Feature Importance
+
+Random Forest feature importance was analyzed to identify the features that contributed most to the model's predictions.
+
+Important features included:
+
+```text
+Tenure Months
+Total Charges
+Monthly Charges
+Contract
+CLTV
+```
+
+Feature importance was visualized using a bar chart.
+
+## Output Files
+
+The following outputs were generated:
+
+```text
+confusion_matrix.png
+cross_validation_results.csv
+cross_validation_scores.csv
+feature_importance.csv
+feature_importance.png
+model_metrics.csv
+model_predictions.csv
+```
+
+## Deliverables
+
+```text
+Week4_Supervised_Learning/
+│
+├── Data/
+│   └── cleaned_telco_churn.csv
+│
+├── outputs/
+│   ├── confusion_matrix.png
+│   ├── cross_validation_results.csv
+│   ├── cross_validation_scores.csv
+│   ├── feature_importance.csv
+│   ├── feature_importance.png
+│   ├── model_metrics.csv
+│   └── model_predictions.csv
+│
+├── Week4_Supervised_Learning.py
+└── Week4_Supervised_Learning_Report.docx
+```
+
+## Technologies and Libraries
+
+```text
+Python
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Random Forest
+Classification
+Feature Engineering
+Train-Test Split
+Cross-Validation
+Confusion Matrix
+Feature Importance
+Model Evaluation
+```
+
+---
+
+# Week 5 – Pending
+
+## Status
+
+```text
+⏳ Pending
+```
+
+The Week 5 assignment will be added to this repository after completion.
+
+The following sections will be updated once the task is completed:
+
+```text
+Objective
+Dataset
+Data Preparation
+Methodology
+Implementation
+Analysis
+Results
+Evaluation
+Visualizations
+Business / Research Insights
+Deliverables
+Technologies Used
+```
+
+---
+
+# Week 6 – Pending
+
+## Status
+
+```text
+⏳ Pending
+```
+
+The Week 6 assignment will be added to this repository after completion.
+
+The following sections will be updated once the task is completed:
+
+```text
+Objective
+Dataset
+Data Preparation
+Methodology
+Implementation
+Analysis
+Results
+Evaluation
+Visualizations
+Business / Research Insights
+Deliverables
+Technologies Used
 ```
 
 ---
 
 # Technologies Used
 
-The following tools and libraries were used throughout the internship:
+The following technologies and Python libraries are being used throughout the internship:
 
-- `Python`
-- `Pandas`
-- `NumPy`
-- `Matplotlib`
-- `Seaborn`
-- `Scikit-learn`
-- `Jupyter Notebook`
-- `VS Code`
-- `Git`
-- `GitHub`
-- `python-docx`
-
----
-
-# Machine Learning and Data Analytics Techniques
-
-The internship work demonstrates practical experience with:
-
-- Data acquisition
-- Data cleaning
-- Data preprocessing
-- Missing value handling
-- Data type conversion
-- Exploratory Data Analysis
-- Statistical analysis
-- Data visualization
-- Feature selection
-- Feature scaling
-- Unsupervised learning
-- K-Means clustering
-- Elbow Method
-- Silhouette Analysis
-- Customer segmentation
-- Cluster interpretation
-- Business-oriented data analysis
+```text
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Jupyter Notebook
+Visual Studio Code
+Git
+GitHub
+```
 
 ---
 
 # Repository Structure
 
-The repository is organized by internship week.
+The repository is organized according to the internship weeks:
 
 ```text
 AI-Data-Analytics-Internship/
 │
-├── README.md
-│
 ├── Week1_Data_Cleaning_Preprocessing/
-│   │
-│   ├── Week1_Data_Cleaning_Preprocessing.ipynb
-│   ├── Week1_Data_Cleaning_Preprocessing_Report.docx
-│   ├── cleaned_telco_churn.csv
-│   ├── customer_churn.csv.ipynb
-│   └── preprocessed_telco_churn.csv
+│   ├── Dataset
+│   ├── Notebook
+│   ├── Cleaned Data
+│   ├── Preprocessed Data
+│   └── Report
 │
 ├── Week2_EDA_and_Visualization/
-│   │
-│   ├── Week2_EDA.py
-│   ├── Week 2 Task — Exploratory Data Analysis and Visualization.docx
-│   ├── cleaned_telco_churn.csv
-│   ├── preprocessed_telco_churn.csv
-│   ├── contract_vs_churn.png
-│   ├── tenure_vs_churn.png
-│   ├── average_monthly_charges_by_churn.png
-│   ├── internet_service_vs_churn.png
-│   ├── payment_method_vs_churn.png
-│   ├── correlation_heatmap.png
-│   └── other EDA visualizations
+│   ├── Python Script
+│   ├── Dataset
+│   ├── Visualizations
+│   └── Report
 │
-└── Week-3-Unsupervised-Learning-Clustering/
-    │
-    ├── data/
-    │   └── Mall_Customers.csv
-    │
-    ├── notebooks/
-    │   └── Week3_Clustering_Analysis.ipynb
-    │
-    ├── outputs/
-    │   ├── age_distribution.png
-    │   ├── age_vs_spending_clusters.png
-    │   ├── cluster_business_comparison.png
-    │   ├── cluster_distribution.png
-    │   ├── cluster_summary.csv
-    │   ├── clusters_3d.png
-    │   ├── customer_clusters.csv
-    │   ├── elbow_curve.png
-    │   ├── final_cluster_profile.csv
-    │   ├── genre_cluster_distribution.png
-    │   ├── income_distribution.png
-    │   ├── income_vs_spending_clusters.png
-    │   ├── silhouette_scores.png
-    │   └── spending_score_distribution.png
-    │
-    ├── report/
-    │
-    ├── src/
-    │
-    └── README.md
+├── Week-3-Unsupervised-Learning-Clustering/
+│   ├── data/
+│   ├── notebooks/
+│   ├── outputs/
+│   └── Report
+│
+├── Week4_Supervised_Learning/
+│   ├── Data/
+│   ├── outputs/
+│   ├── Python Script
+│   └── Report
+│
+├── Week5/
+│
+├── Week6/
+│
+└── README.md
 ```
 
 ---
 
 # Overall Internship Progress
 
-## Week 1
+```text
+Week 1  ████████████████████ 100% ✅
+Week 2  ████████████████████ 100% ✅
+Week 3  ████████████████████ 100% ✅
+Week 4  ████████████████████ 100% ✅
+Week 5  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+Week 6  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+```
 
-Completed data acquisition, cleaning, and preprocessing of the Telco Customer Churn dataset.
+## Current Progress
 
-## Week 2
+```text
+4 / 6 Weeks Completed
 
-Completed Exploratory Data Analysis and visualization of the customer churn dataset.
+Overall Progress: 66.7%
+```
 
-## Week 3
+---
 
-Completed unsupervised learning and customer segmentation using K-Means clustering on the Mall Customers dataset.
+# Learning Outcomes
+
+Through the completed assignments, I have gained practical experience in:
+
+```text
+Data Acquisition
+Data Cleaning
+Data Preprocessing
+Exploratory Data Analysis
+Data Visualization
+Statistical Analysis
+Unsupervised Learning
+K-Means Clustering
+Customer Segmentation
+Elbow Method
+Silhouette Analysis
+Supervised Learning
+Classification
+Random Forest
+Feature Engineering
+Train-Test Split
+Cross-Validation
+Confusion Matrix
+Feature Importance
+Model Evaluation
+Business Insights
+```
 
 ---
 
 # Conclusion
 
-Across the first three weeks of the internship, the project progressed from raw data preparation to exploratory analysis and finally to machine learning-based customer segmentation.
+This repository documents my practical learning journey during the AI/Data Analytics Internship.
 
-Week 1 established a clean and reliable dataset through data acquisition, cleaning, and preprocessing.
+The completed assignments demonstrate the application of data analytics and machine learning techniques to real-world datasets.
 
-Week 2 explored the cleaned data through statistical analysis and visualization to identify important patterns and relationships.
+The internship work has progressed from basic data preparation and exploratory analysis to advanced machine learning techniques such as clustering and supervised classification.
 
-Week 3 extended the analysis into unsupervised machine learning by applying K-Means clustering to segment customers based on age, annual income, and spending behavior.
+The completed weeks currently include:
 
-The final clustering analysis identified six customer segments with different demographic and spending characteristics.
+```text
+Week 1 → Data Cleaning and Preprocessing
+Week 2 → Exploratory Data Analysis and Visualization
+Week 3 → Unsupervised Learning and Clustering
+Week 4 → Supervised Learning Model Implementation
+```
 
-The analysis demonstrates how unsupervised learning can be used to transform customer data into meaningful segments that can support targeted marketing strategies and business decision-making.
-
-Together, these three weeks demonstrate practical experience in Python-based data analytics, data preprocessing, visualization, exploratory analysis, and machine learning.
+Week 5 and Week 6 will be added as the internship progresses.
 
 ---
 
 # Author
 
-**Asfina Magi**
+## Asfina Magi
 
-B.Tech Computer Science Engineering – AI/ML
+**B.Tech Computer Science Engineering – AI/ML**
 
-Alliance University
+**Alliance University**
+
+GitHub: `asfina9591-u`
 
 ---
 
-# Project Status
+# Repository Status
 
 ```text
-Week 1  - Completed
-Week 2  - Completed
-Week 3  - Completed
+Week 1 → ✅ Completed
+Week 2 → ✅ Completed
+Week 3 → ✅ Completed
+Week 4 → ✅ Completed
+Week 5 → ⏳ Pending
+Week 6 → ⏳ Pending
 ```
 
-The repository will be updated with additional internship tasks as they are completed.
+**Last Updated: August 2026**
